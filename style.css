@@ -71,3 +71,32 @@ header {
 .nav-console .nav-link {
     color: #2f01a5;
 }
+
+.btn {
+    background-color: #2f01a5;
+    color: white;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links i {
+    color: #2f01a5;
+}
+
+#sobre-loja-img {
+    height: 290px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+}

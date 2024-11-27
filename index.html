@@ -21,7 +21,7 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="#loja" class="nav-link active">
+                        <a href="#cabecalho" class="nav-link active">
                             <i class="bi bi-shop me-1"></i>
                             Sobre a loja
                         </a>
@@ -32,13 +32,13 @@
                             Tipos de console
                         </a>
                     </li>
-                    <li class="nav-item fw-bold">
+                    <li href="#consoles" class="nav-item fw-bold">
                         <a class="nav-link">
                             <i class="bi bi-joystick me-1"></i>
                             Consoles
                         </a>
                     </li>
-                    <li class="nav-item fw-bold">
+                    <li href="#consoles-tradicionais" class="nav-item fw-bold">
                         <a class="nav-link">
                             <i class="bi bi-chat-left-text-fill me-1"></i>
                             Entre em contato
@@ -77,10 +77,10 @@
                 <div class="pt-5 pb-5">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-5">
-                                <img src="./images/espaco-interno.jpg" class="d-block w-100 rounded" alt="Espaço interno da loja de games">
+                            <div class="col-md-5 mt-md-1">
+                                <img src="./images/espaco-interno.jpg" id="sobre-loja-img" class="d-block w-100 rounded" alt="Espaço interno da loja de games">
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-7 mt-3 mt-md-0">
                                 <h2 class="section-title">Sobre a loja</h2>
                                 <p class="section-p">
                                     Game Center é uma loja especializada em consoles, acessórios e jogos, oferecendo desde clássicos até as últimas gerações. Um espaço ideal para gamers que buscam qualidade e variedade. 🎮
@@ -139,18 +139,123 @@
         <section id="consoles">
             <div class="container">
                 <div class="row">
-                    <h2 class="text-center section-title">Consoles</h2>
+                    <h2 class="text-center section-title my-4">Consoles</h2>
                 </div>
                 <div class="row">
-                    <aside class="col-md-2">
+                    <aside class="col-md-2 mb-3 mb-md-0">
                         <nav class="nav nav-pills flex-column nav-console">
-                            <button type="button" class="fw-bold text-start nav-link active">Máquinas Arcade</button>
-                            <button type="button" class="fw-bold text-start nav-link">Consoles Portáteis</button>
-                            <button type="button" class="fw-bold text-start nav-link">Consoles Tradicionais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#arcades" class="fw-bold text-start nav-link active">Máquinas Arcade</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#portateis" class="fw-bold text-start nav-link">Consoles Portáteis</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#consoles-tradicionais" class="fw-bold text-start nav-link">Consoles Tradicionais</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
-                        conteudo
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="arcades">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img  class="d-block w-100" src="./images/mini-arcade.jpg" alt="mini-arcade">
+                                        <h5 class="text-start fw-bold mt-2">Mini Arcade</h5>
+                                        <p class="section-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img  class="d-block w-100" src="./images/maquina-arcade-metal slug.jpg" alt="arcade">
+                                        <h5 class="text-start fw-bold mt-2">Arcade</h5>
+                                        <p class="section-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="portateis">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img  class="d-block w-100" src="./images/ayaneo.jpg" alt="ayaneo">
+                                        <h5 class="text-start fw-bold mt-2">Ayaneo</h5>
+                                        <p class="section-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img  class="d-block w-100" src="./images/steamdeck.jpg" alt="steamdeck">
+                                        <h5 class="text-start fw-bold mt-2">Steam Deck</h5>
+                                        <p class="section-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="consoles-tradicionais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img  class="d-block w-100" src="./images/PS5.jpg" alt="ps5">
+                                        <h5 class="text-start fw-bold mt-2">PS5</h5>
+                                        <p class="section-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img  class="d-block w-100" src="./images/series-x.jpg" alt="seriesx">
+                                        <h5 class="text-start fw-bold mt-2">Series X</h5>
+                                        <p class="section-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center my-4">Fale Conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <form>
+                            <div>
+                                <label for="nome" class="form-label my-3 fw-bold">Seu nome</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div>
+                                <label for="email" class="form-label my-3 fw-bold">E-mail</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                            <div>
+                                <label for="nome" class="form-label my-3 fw-bold">Telefone (Opcional)</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div>
+                                <label for="mensagem" class="form-label my-3 fw-bold">Sua mensagem</label>
+                                <textarea name="mensagem" class="form-control" id="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn my-3">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes Sociais
+                            </h2>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h2>
+                                <p class="section-p">Rua das Cariçabas - Bairro Jaridm Limoeiro - Minas Gerais - MG</p>
+                        </div>
                     </div>
                 </div>
             </div>
